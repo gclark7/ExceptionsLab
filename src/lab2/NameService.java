@@ -22,7 +22,7 @@ public class NameService {
      * @param fullName - a name containing a first name and a last name
      * @return the last name
      */
-    public String extractLastName(String fullName) {
+    public String extractLastName(String fullName) throws IllegalArgumentException{
         //String[] nameParts = fullName.split(" ");
         //return nameParts[LAST_NAME_IDX];
         

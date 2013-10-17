@@ -113,6 +113,7 @@ public class Employee {
     }
 
     /**
+     * May want to consider birthday compared to hire date -- age restrictions
      * checks for null and legitimate date
      * @param hireDate 
      */

@@ -24,7 +24,7 @@ public class NameService {
      * @param fullName - a name containing a first name and a last name
      * @return the last name
      */
-    public String extractLastName(String fullName) {
+    public String extractLastName(String fullName) throws CustomExceptions{
         //String[] nameParts = fullName.split(" ");
         //return nameParts[LAST_NAME_IDX];
         
@@ -54,7 +54,8 @@ public class NameService {
         
             if(!nameRight){
                //throw new IllegalArgumentException(msg+REQUEST_FULL_NAME);
-               throw new CustomExceptions(msg+REQUEST_FULL_NAME);
+               throw 
+                       new CustomExceptions(msg+REQUEST_FULL_NAME);
             }
         //}while(!nameRight);
         
